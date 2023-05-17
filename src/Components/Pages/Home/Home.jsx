@@ -1,7 +1,14 @@
 import React from "react";
+import Banner from "./Banner";
+import GallerySection from "./GallerySection";
 
 const Home = () => {
-  return <div>this is home</div>;
+  return (
+    <>
+      <Banner></Banner>
+      <GallerySection></GallerySection>
+    </>
+  );
 };
 
 export default Home;

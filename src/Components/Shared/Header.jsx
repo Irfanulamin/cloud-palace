@@ -20,7 +20,9 @@ const Header = () => {
           <img src="/logo.png" alt="cloud-palace-logo" className="w-24 h-16" />
         </div>
         <div>
-          <p className="primary_font text-3xl text-white">Cloud Palace</p>
+          <p className="primary_font text-3xl lg:text-5xl text-white">
+            Cloud Palace
+          </p>
         </div>
       </div>
       <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
