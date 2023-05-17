@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg_primary {
+  background-color: #3c4cad;
+}
+
+* {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.primary_font {
+  font-family: "Pacifico", cursive;
+}
