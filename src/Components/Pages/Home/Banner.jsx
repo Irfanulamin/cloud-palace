@@ -6,8 +6,8 @@ import img1 from "../../../assets/images/1.jpg";
 
 const Banner = () => {
   return (
-    <div className="hidden md:block lg:block">
-      <div className="w-full gap-7 pt-4 bg_primary px-16  grid grid-cols-5">
+    <div className="hidden bg_primary md:block pb-24 px-16 lg:block">
+      <div className="w-full gap-7  pb-7  grid grid-cols-5">
         <div className="col-start-1 col-end-5 ease-out ">
           <img src={img4} className="w-full h-80 object-cover " />
         </div>
@@ -15,7 +15,7 @@ const Banner = () => {
           <img src={img1} className="w-full h-80 object-cover" />
         </div>
       </div>
-      <div className="w-full gap-7 pt-7 bg_primary px-16  grid grid-cols-5">
+      <div className="w-full gap-7 grid grid-cols-5">
         <div className="col-start-1 col-end-4 ">
           <img src={img2} className="w-full h-80 object-cover" />
         </div>

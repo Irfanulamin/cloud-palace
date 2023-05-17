@@ -5,6 +5,12 @@
 .bg_primary {
   background-color: #3c4cad;
 }
+.bg_secondary {
+  background-color: #f9c449;
+}
+.bg_tags {
+  background-color: #e8a49c;
+}
 
 * {
   font-family: "Didact Gothic", sans-serif;
