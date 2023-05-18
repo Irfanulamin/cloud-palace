@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg_primary flex flex-col gap-12 md:flex-row lg:flex-row justify-between items-center py-16 px-12">
+    <div className="bg_primary flex flex-col gap-12 md:flex-row lg:flex-row justify-between items-center py-10 px-12">
       <div>
         <img
           src="/logo.png"

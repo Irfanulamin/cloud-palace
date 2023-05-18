@@ -8,6 +8,7 @@ import AuthProvider from "./AuthProvider/AuthProvider";
 import Login from "./Components/Pages/Login/Login";
 import Register from "./Components/Pages/Register/Register";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import AllToys from "./Components/Pages/AllToys/AllToys";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/alltoys",
+        element: <AllToys></AllToys>,
       },
     ],
   },
