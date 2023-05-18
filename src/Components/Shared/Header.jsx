@@ -1,9 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [hover, setHover] = useState(false);
+
+  const handleHoverIn = () => {
+    setHover(true);
+  };
+
+  const handleHoverOut = () => {
+    setHover(false);
+  };
 
   const handleSignOut = () => {
     logOut()
@@ -15,8 +24,18 @@ const Header = () => {
   };
 
   return (
-    <div className="bg_primary flex flex-col gap-y-12 md:flex-row lg:flex-row justify-between items-center py-16 px-12">
-      <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
+    <div className="bg_primary flex flex-col gap-12 md:flex-row lg:flex-row justify-between items-center py-16 px-12">
+      <div className="flex flex-col justify-center items-center">
+        <div>
+          <img src="/logo.png" alt="cloud-palace-logo" className="w-24 h-16" />
+        </div>
+        <div>
+          <p className="primary_font text-3xl md:text-5xl lg:text-6xl text-white">
+            Cloud Palace
+          </p>
+        </div>
+      </div>
+      <div className="flex  flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
         <NavLink to="/" className="text-base font-semibold text-white">
           Home
         </NavLink>
@@ -26,30 +45,47 @@ const Header = () => {
         <NavLink to="/blogs" className="text-base font-semibold text-white">
           Blogs
         </NavLink>
-      </div>
-      <div className="flex flex-col justify-center items-center">
-        <div>
-          <img src="/logo.png" alt="cloud-palace-logo" className="w-24 h-16" />
-        </div>
-        <div>
-          <p className="primary_font text-3xl lg:text-5xl text-white">
-            Cloud Palace
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
-        <NavLink to="/mytoys" className="text-base font-semibold text-white">
-          My Toys
-        </NavLink>
-        <NavLink to="/alltoys" className="text-base font-semibold text-white">
-          Add a Toys
-        </NavLink>
+        {user && (
+          <NavLink to="/mytoys" className="text-base font-semibold text-white">
+            My Toys
+          </NavLink>
+        )}
+        {user && (
+          <NavLink to="/alltoys" className="text-base font-semibold text-white">
+            Add a Toys
+          </NavLink>
+        )}
 
         {!user && (
           <NavLink to="/login" className="text-base font-semibold text-white">
             Login
           </NavLink>
         )}
+
+        {user?.photoURL && (
+          <div
+            onMouseEnter={handleHoverIn}
+            onMouseLeave={handleHoverOut}
+            className="avatar w-[2rem]"
+          >
+            <div className=" w-12 rounded-full">
+              <img src={user.photoURL} />
+            </div>
+          </div>
+        )}
+
+        {hover && (
+          <div>
+            <p
+              onMouseEnter={handleHoverIn}
+              onMouseLeave={handleHoverOut}
+              className="text-base font-semibold text-white color_secondary"
+            >
+              {user.displayName}
+            </p>
+          </div>
+        )}
+
         {user && (
           <p
             className="text-base font-semibold text-white"

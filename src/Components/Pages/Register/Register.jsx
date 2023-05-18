@@ -1,8 +1,39 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 const Register = () => {
+  const [error, setError] = useState("");
+  const { signUp, signInWithGoogle } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form?.email?.value;
+    const password = form?.password?.value;
+    setError("");
+    signUp(email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        navigate("/");
+      })
+      .catch((err) => setError(err.message));
+  };
+
+  const handleGoogleSignIN = () => {
+    setError(" ");
+    signInWithGoogle()
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        navigate("/");
+      })
+      .catch((err) => setError(err.message));
+  };
+
   return (
     <div className="py-16 flex justify-center items-center bg_secondary">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -16,7 +47,7 @@ const Register = () => {
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm  bg-base-100">
-          <form>
+          <form onSubmit={handleRegister}>
             <div className="p-10">
               <div className="form-control">
                 <label className="label">
@@ -71,6 +102,9 @@ const Register = () => {
                 <span className="color_primary"> Login</span>
               </Link>
               <div className="form-control mt-6">
+                {error && (
+                  <p className="text-red-600 font-semibold mb-2">{error}</p>
+                )}
                 <input
                   className="btn btn-primary border-none bg_primary ease-in hover:bg-white hover:text-black"
                   type="submit"
@@ -79,7 +113,10 @@ const Register = () => {
               </div>
               <hr className="border border-black my-4" />
               <div className="flex justify-center items-center">
-                <FcGoogle className="h-7 w-7"></FcGoogle>
+                <FcGoogle
+                  onClick={handleGoogleSignIN}
+                  className="h-7 w-7"
+                ></FcGoogle>
               </div>
             </div>
           </form>

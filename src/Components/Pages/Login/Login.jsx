@@ -1,12 +1,17 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 const Login = () => {
-  const { signInWithGoogle } = useContext(AuthContext);
+  const [error, setError] = useState("");
+  const { signInWithGoogle, signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
 
   const handleGoogleSignIN = () => {
+    setError("");
     signInWithGoogle()
       .then((res) => {
         const user = res.user;
@@ -14,6 +19,23 @@ const Login = () => {
         navigate(from, { replace: true });
       })
       .catch((err) => setError(err.message));
+  };
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form?.email?.value;
+    const password = form?.password?.value;
+    console.log(email, password);
+    setError("");
+    signIn(email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user);
+        navigate(from, { replace: true });
+      })
+      .catch((err) => setError(err.message));
+    form.reset();
   };
 
   return (
@@ -29,7 +51,7 @@ const Login = () => {
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm  bg-base-100">
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="p-10">
               <div className="form-control">
                 <label className="label">
@@ -60,6 +82,9 @@ const Login = () => {
                 <span className="color_primary"> Register</span>
               </Link>
               <div className="form-control mt-6">
+                {error && (
+                  <p className="text-red-600 font-semibold mb-2">{error}</p>
+                )}
                 <input
                   className="btn btn-primary border-none bg_primary ease-in hover:bg-white hover:text-black"
                   type="submit"
