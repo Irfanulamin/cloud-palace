@@ -25,17 +25,18 @@ const Header = () => {
 
   return (
     <div className="bg_primary flex flex-col gap-12 md:flex-row lg:flex-row justify-between items-center py-16 px-12">
-      <div className="flex flex-col justify-center items-center">
-        <div>
-          <img src="/logo.png" alt="cloud-palace-logo" className="w-24 h-16" />
-        </div>
-        <div>
-          <p className="primary_font text-3xl md:text-5xl lg:text-6xl text-white">
-            Cloud Palace
-          </p>
-        </div>
+      <div>
+        <img
+          src="/logo.png"
+          alt="cloud-palace-logo"
+          className="w-24 h-16 md:w-32 md:h-24 lg:w-32 lg:h-24"
+        />
+
+        <p className="primary_font text-3xl md:text-5xl lg:text-6xl text-white">
+          Cloud Palace
+        </p>
       </div>
-      <div className="flex  flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
+      <div className="flex  flex-col md:flex-row md:flex-wrap lg:flex-row justify-center items-center gap-4">
         <NavLink to="/" className="text-base font-semibold text-white">
           Home
         </NavLink>
@@ -79,7 +80,7 @@ const Header = () => {
             <p
               onMouseEnter={handleHoverIn}
               onMouseLeave={handleHoverOut}
-              className="text-base font-semibold text-white color_secondary"
+              className="text-base font-semibold text-white "
             >
               {user.displayName}
             </p>

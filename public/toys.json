@@ -1,0 +1,132 @@
+[
+  {
+    "image": "https://example.com/toy-image.jpg",
+    "name": "Toy Car",
+    "price": 19.99,
+    "rating": 4.5,
+    "seller": {
+      "name": "ToyWorld",
+      "email": "toyseller@example.com"
+    },
+    "category": "Vehicle Toys",
+    "quantity": 10,
+    "description": "This toy car is a sleek and fast racing vehicle. It comes with realistic features, vibrant colors, and smooth wheels. Perfect for young racing enthusiasts!"
+  },
+  {
+    "image": "https://example.com/toy-image.jpg",
+    "name": "Stuffed Teddy Bear",
+    "price": 14.99,
+    "rating": 4.2,
+    "seller": {
+      "name": "Cuddly Toys",
+      "email": "cuddlytoys@example.com"
+    },
+    "category": "Soft Toys",
+    "quantity": 5,
+    "description": "Meet your new cuddly companion, the stuffed teddy bear! This adorable bear is made from soft and huggable material, making it the perfect bedtime buddy for kids of all ages."
+  },
+  {
+    "image": "https://i.ibb.co/xmG0Rgk/puzzle-1.png",
+    "name": "Puzzle Set",
+    "price": 19.99,
+    "rating": 4.8,
+    "seller": {
+      "name": "Brain Teasers Inc.",
+      "email": "brainteasers@example.com"
+    },
+    "category": "Puzzle",
+    "quantity": 5,
+    "description": "Challenge your brain with this exciting puzzle set! It includes various mind-bending puzzles and games that provide hours of entertainment and help improve cognitive skills."
+  },
+  {
+    "image": "https://i.ibb.co/xFH13c0/puzzle-2.jpg",
+    "name": "Toy Story Puzzle Set",
+    "price": 29.99,
+    "rating": 4,
+    "seller": {
+      "name": "Alexander jarvis",
+      "email": "alex1234@example.com"
+    },
+    "category": "Puzzle",
+    "quantity": 3,
+    "description": "Challenge your brain with this Toy Story puzzle set!. Exclusivly available now!"
+  },
+  {
+    "image": "https://i.ibb.co/XDZhjZX/puzzle-3.jpg",
+    "name": "Elephant Puzzle Set",
+    "price": 14.99,
+    "rating": 3.2,
+    "seller": {
+      "name": "Justin bieber",
+      "email": "justin@bieber.com"
+    },
+    "category": "Puzzle",
+    "quantity": 7,
+    "description": "It includes various mind-bending puzzles and games that provide entertainment to your child."
+  },
+  {
+    "image": "https://i.ibb.co/kJDBKd1/puzzle-4.jpg",
+    "name": "Ring Puzzle Set",
+    "price": 7.99,
+    "rating": 3,
+    "seller": {
+      "name": "John depp",
+      "email": "Johndepp@hotmail.com"
+    },
+    "category": "Puzzle",
+    "quantity": 3,
+    "description": "Challenge your brain with this exciting ring puzzle."
+  },
+  {
+    "image": "https://i.ibb.co/KctC8wS/puzzle-5.jpg",
+    "name": "Square Puzzle Set",
+    "price": 9.99,
+    "rating": 4,
+    "seller": {
+      "name": "Brain Teasers Inc.",
+      "email": "brainteasers@example.com"
+    },
+    "category": "Puzzle",
+    "quantity": 2,
+    "description": "Challenge your brain with this exciting square puzzle set! It includes various mind-bending puzzles and games that provide hours of entertainment and help improve cognitive skills."
+  },
+  {
+    "image": "https://i.ibb.co/CW2bvps/puzzle-6.png",
+    "name": "Rubik's Cube",
+    "price": 12.99,
+    "rating": 4,
+    "seller": {
+      "name": "Brain Teasers Inc.",
+      "email": "brainteasers@example.com"
+    },
+    "category": "Puzzle",
+    "quantity": 1,
+    "description": "Challenge your brain with this exciting puzzle set! It includes various mind-bending puzzles and games that provide hours of entertainment and help improve cognitive skills."
+  },
+  {
+    "image": "https://i.ibb.co/0qtC7fr/puzzle-7.jpg",
+    "name": "Creative Puzzle Set",
+    "price": 24.99,
+    "rating": 4.8,
+    "seller": {
+      "name": "Andrew Teasers ",
+      "email": "andrewteasers@example.com"
+    },
+    "category": "Puzzle or Board Games",
+    "quantity": 2,
+    "description": "It includes various mind-bending puzzles and games that provide hours of entertainment and help improve cognitive skills."
+  },
+  {
+    "image": "https://i.ibb.co/GWmk12K/puzzle-8.jpg",
+    "name": "Puzzle Set",
+    "price": 34.99,
+    "rating": 4.8,
+    "seller": {
+      "name": "Bonfino Inc.",
+      "email": "bonfino@example.com"
+    },
+    "category": "Puzzle",
+    "quantity": 3,
+    "description": "Challenge your brain with this exciting Bonfinp 5 in 1 Triangle puzzle set!"
+  }
+]
