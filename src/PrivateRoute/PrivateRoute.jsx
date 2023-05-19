@@ -9,7 +9,9 @@ const PrivateRoute = ({ children }) => {
   if (loading) {
     return (
       <>
-        <div className="flex justify-center items-center p-72">Loading</div>
+        <div className="flex justify-center items-center p-72 bg_secondary">
+          <progress className="progress w-56"></progress>
+        </div>
       </>
     );
   }
