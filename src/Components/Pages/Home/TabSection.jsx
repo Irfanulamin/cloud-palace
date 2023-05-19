@@ -6,9 +6,9 @@ const TabSection = () => {
   return (
     <Tabs className="bg_primary pt-12">
       <TabList className="text-white  text-lg font-semibold flex justify-center items-center">
-        <Tab>Soft Toys</Tab>
-        <Tab>Vehicle Toys</Tab>
-        <Tab>Puzzle</Tab>
+        <Tab>Teddy Bear</Tab>
+        <Tab>Dinosaurs</Tab>
+        <Tab>Animals</Tab>
       </TabList>
 
       <TabPanel>

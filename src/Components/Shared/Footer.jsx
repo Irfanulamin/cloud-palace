@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg_primary text-base-content">
+    <footer className="footer p-24 bg_primary text-base-content">
       <div>
         <img src="/logo.png" alt="cloud-palace-logo" className="w-24 h-16" />
         <p className="text-xl text-white font-semibold">Cloud Palace</p>

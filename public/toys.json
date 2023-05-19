@@ -1,83 +1,5 @@
 [
   {
-    "image": "https://i.ibb.co/s1L5bdB/car-1.jpg",
-    "name": "Yellow Toy Car",
-    "price": 9.99,
-    "rating": 4.5,
-    "seller": {
-      "name": "ToyWorld",
-      "email": "toyseller@example.com"
-    },
-    "category": "Vehicle Toys",
-    "quantity": 5,
-    "description": "This toy car is a sleek and fast racing vehicle. It comes with realistic features, vibrant colors, and smooth wheels. Perfect for young racing enthusiasts!"
-  },
-  {
-    "image": "https://i.ibb.co/DrzPSQD/car-2.jpg",
-    "name": "Lamborghini Car",
-    "price": 8.99,
-    "rating": 4,
-    "seller": {
-      "name": "crimson joe",
-      "email": "crimson@example.com"
-    },
-    "category": "Vehicle Toys",
-    "quantity": 3,
-    "description": "This toy car is a sleek and fast racing vehicle. Perfect for young racing enthusiasts!"
-  },
-  {
-    "image": "https://i.ibb.co/sQm2h4R/car-3.jpg",
-    "name": "Tesla Model 3",
-    "price": 7.99,
-    "rating": 4,
-    "seller": {
-      "name": "Elon Musk",
-      "email": "elondogecoin@example.com"
-    },
-    "category": "Vehicle Toys",
-    "quantity": 5,
-    "description": "This toy electrice toy car. It comes with realistic features, vibrant colors, and smooth wheels."
-  },
-  {
-    "image": "https://i.ibb.co/Gt5WNkt/car-4.jpg",
-    "name": "Bugatti Black Chiron",
-    "price": 17.99,
-    "rating": 4,
-    "seller": {
-      "name": "Andrew Tate",
-      "email": "andrewtate@example.com"
-    },
-    "category": "Vehicle Toys",
-    "quantity": 1,
-    "description": "Perfect for young racing enthusiasts!. Fast , stong-build and more duarble."
-  },
-  {
-    "image": "https://i.ibb.co/PCwgxMx/car-5.png",
-    "name": "GTR Silver Car",
-    "price": 8.99,
-    "rating": 4,
-    "seller": {
-      "name": "irfan",
-      "email": "irfanul@amin.com"
-    },
-    "category": "Vehicle Toys",
-    "quantity": 5,
-    "description": "This toy car is a sleek and fast racing vehicle. It comes with realistic features, vibrant colors, and smooth wheels. Perfect for young racing enthusiasts!"
-  },
-  {
-    "image": "https://i.ibb.co/5xCgMDs/car-6.jpg",
-    "name": "Vinatge Toy Car",
-    "price": 7.99,
-    "rating": 3.5,
-    "seller": {
-      "name": "ToyWorld",
-      "email": "toyseller@example.com"
-    },
-    "category": "Vehicle Toys",
-    "quantity": 5,
-    "description": "This toy car is a sleek and fast racing vehicle. It comes with realistic features, vibrant colors, and smooth wheels. Perfect for young racing enthusiasts!"
-  },
-  {
     "image": "https://i.ibb.co/L6zpXbB/soft-1.jpg",
     "name": "Brown Teddy Bear",
     "price": 14.99,
@@ -86,7 +8,7 @@
       "name": "Cuddly Toys",
       "email": "cuddlytoys@example.com"
     },
-    "category": "Soft Toys",
+    "category": "Teddy",
     "quantity": 5,
     "description": "Meet your new cuddly companion, the stuffed teddy bear! This adorable bear is made from soft and huggable material, making it the perfect bedtime buddy for kids of all ages."
   },
@@ -99,7 +21,7 @@
       "name": "Rimon Diaz",
       "email": "eimonrimon@example.com"
     },
-    "category": "Soft Toys",
+    "category": "Animal",
     "quantity": 3,
     "description": "Meet your new cuddly companion, the stuffed elephant! This adorable toy is made from soft and huggable material, making it the perfect bedtime buddy for kids."
   },
@@ -109,51 +31,12 @@
     "price": 49.99,
     "rating": 5,
     "seller": {
-      "name": "Josim uddin",
-      "email": "josimuddins@example.com"
+      "name": "Josh wash",
+      "email": "josh@example.com"
     },
-    "category": "Soft Toys",
+    "category": "Teddy",
     "quantity": 2,
     "description": "Gift Your Love one with this Teddy bear set on Valentines Day"
-  },
-  {
-    "image": "https://i.ibb.co/D53fxyq/soft-4.jpg",
-    "name": "Among Us Soft Toy",
-    "price": 99.99,
-    "rating": 5,
-    "seller": {
-      "name": "Jimmy Hanks",
-      "email": "jimmyhankss@example.com"
-    },
-    "category": "Soft Toys",
-    "quantity": 3,
-    "description": "Soft Pulshie Toys , Made with 100% cotton . Comfortable to cuddle"
-  },
-  {
-    "image": "https://i.ibb.co/8ztJZBv/soft-5.jpg",
-    "name": "Pikachu Soft Toy",
-    "price": 19.99,
-    "rating": 3,
-    "seller": {
-      "name": "ali hammood",
-      "email": "alihamood@example.com"
-    },
-    "category": "Soft Toys",
-    "quantity": 2,
-    "description": "Your Favourite Pokemon Characther Pulsie toys are avaiable , made in china and 100% original"
-  },
-  {
-    "image": "https://i.ibb.co/Qc29Vhh/soft-6.jpg",
-    "name": "Shin Chan Toy",
-    "price": 59.99,
-    "rating": 3,
-    "seller": {
-      "name": "ali hammood",
-      "email": "alihamood@example.com"
-    },
-    "category": "Soft Toys",
-    "quantity": 6,
-    "description": "Your Favourite Anime Cartoon Characther Pulsie toys are avaiable , made in china and 100% original"
   },
   {
     "image": "https://i.ibb.co/ygVVCyy/soft-7.jpg",
@@ -164,7 +47,7 @@
       "name": "Rimon Diaz",
       "email": "eimonrimon@example.com"
     },
-    "category": "Soft Toys",
+    "category": "Animal",
     "quantity": 6,
     "description": "Meet your new cuddly companion, the stuffed unicorn! This adorable toy is made from soft and huggable material, making it the perfect bedtime buddy for kids."
   },
@@ -177,86 +60,8 @@
       "name": "karl jacoobs",
       "email": "karl@gmail.com"
     },
-    "category": "Soft Toys",
+    "category": "Teddy",
     "quantity": 2,
     "description": "Gift Your Love one with this Teddy bear set on Valentines Day"
-  },
-  {
-    "image": "https://i.ibb.co/xmG0Rgk/puzzle-1.png",
-    "name": "Puzzle Set",
-    "price": 19.99,
-    "rating": 4.8,
-    "seller": {
-      "name": "Brain Teasers Inc.",
-      "email": "brainteasers@example.com"
-    },
-    "category": "Puzzle",
-    "quantity": 5,
-    "description": "Challenge your brain with this exciting puzzle set! It includes various mind-bending puzzles and games that provide hours of entertainment and help improve cognitive skills."
-  },
-  {
-    "image": "https://i.ibb.co/xFH13c0/puzzle-2.jpg",
-    "name": "Toy Story Puzzle Set",
-    "price": 29.99,
-    "rating": 4,
-    "seller": {
-      "name": "Alexander jarvis",
-      "email": "alex1234@example.com"
-    },
-    "category": "Puzzle",
-    "quantity": 3,
-    "description": "Challenge your brain with this Toy Story puzzle set!. Exclusivly available now!"
-  },
-  {
-    "image": "https://i.ibb.co/XDZhjZX/puzzle-3.jpg",
-    "name": "Elephant Puzzle Set",
-    "price": 14.99,
-    "rating": 3.2,
-    "seller": {
-      "name": "Justin bieber",
-      "email": "justin@bieber.com"
-    },
-    "category": "Puzzle",
-    "quantity": 7,
-    "description": "It includes various mind-bending puzzles and games that provide entertainment to your child."
-  },
-  {
-    "image": "https://i.ibb.co/kJDBKd1/puzzle-4.jpg",
-    "name": "Ring Puzzle Set",
-    "price": 7.99,
-    "rating": 3,
-    "seller": {
-      "name": "John depp",
-      "email": "Johndepp@hotmail.com"
-    },
-    "category": "Puzzle",
-    "quantity": 3,
-    "description": "Challenge your brain with this exciting ring puzzle."
-  },
-  {
-    "image": "https://i.ibb.co/KctC8wS/puzzle-5.jpg",
-    "name": "Square Puzzle Set",
-    "price": 9.99,
-    "rating": 4,
-    "seller": {
-      "name": "Brain Teasers Inc.",
-      "email": "brainteasers@example.com"
-    },
-    "category": "Puzzle",
-    "quantity": 2,
-    "description": "Challenge your brain with this exciting square puzzle set! It includes various mind-bending puzzles and games that provide hours of entertainment and help improve cognitive skills."
-  },
-  {
-    "image": "https://i.ibb.co/GWmk12K/puzzle-8.jpg",
-    "name": "Puzzle Set",
-    "price": 34.99,
-    "rating": 4.8,
-    "seller": {
-      "name": "Bonfino Inc.",
-      "email": "bonfino@example.com"
-    },
-    "category": "Puzzle",
-    "quantity": 3,
-    "description": "Challenge your brain with this exciting Bonfinp 5 in 1 Triangle puzzle set!"
   }
 ]
