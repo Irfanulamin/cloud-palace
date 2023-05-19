@@ -22,7 +22,7 @@ const AllToys = () => {
   };
 
   return (
-    <div className="bg_tags px-32 py-12">
+    <div className="bg_tags px-24 py-12">
       <p className="text-5xl text-center primary_font mb-32 text-white underline">
         All Toys Section
       </p>

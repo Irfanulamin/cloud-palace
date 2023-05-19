@@ -32,11 +32,11 @@ const Header = () => {
           className="w-24 h-16 md:w-32 md:h-24 lg:w-32 lg:h-24"
         />
 
-        <p className="primary_font text-3xl md:text-5xl lg:text-6xl text-white">
+        <p className="primary_font text-3xl md:text-4xl lg:text-5xl text-white">
           Cloud Palace
         </p>
       </div>
-      <div className="flex  flex-col md:flex-row md:flex-wrap lg:flex-row justify-center items-center gap-4">
+      <div className="flex  flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
         <NavLink to="/" className="text-base font-semibold text-white">
           Home
         </NavLink>
