@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import TeddyBearTab from "./TeddyBearTab";
+import DinosaurTab from "./DinosaurTab";
+import AnimalTab from "./AnimalTab";
 
 const TabSection = () => {
   return (
-    <Tabs className="bg_primary pt-12">
+    <Tabs className="bg_secondary pt-12">
       <TabList className="text-white  text-lg font-semibold flex justify-center items-center">
         <Tab>Teddy Bear</Tab>
         <Tab>Dinosaurs</Tab>
@@ -12,13 +15,13 @@ const TabSection = () => {
       </TabList>
 
       <TabPanel>
-        <h2>Any content 1</h2>
+        <TeddyBearTab></TeddyBearTab>
       </TabPanel>
       <TabPanel>
-        <h2>Any content 2</h2>
+        <DinosaurTab></DinosaurTab>
       </TabPanel>
       <TabPanel>
-        <h2>Any content 3</h2>
+        <AnimalTab></AnimalTab>
       </TabPanel>
     </Tabs>
   );
