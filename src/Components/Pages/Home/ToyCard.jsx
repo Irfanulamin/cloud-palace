@@ -4,14 +4,12 @@ import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
-const ToyCard = ({ toy }) => {
+const ToyCard = ({ toy, toastifyWarning }) => {
   const { user } = useContext(AuthContext);
 
   const handleViewDetails = () => {
     if (!user?.email) {
-      alert("You have to log in first to view details");
-    } else {
-      history.push(`/toy/${toy.id}`);
+      toastifyWarning();
     }
   };
 

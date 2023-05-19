@@ -6,7 +6,7 @@ const AllToys = () => {
   const [search, setSearch] = useState("");
   const [filterToys, setFilterToys] = useState([]);
   useEffect(() => {
-    fetch("/toys.json")
+    fetch("http://localhost:7000/toys")
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, []);

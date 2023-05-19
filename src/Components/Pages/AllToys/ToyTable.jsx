@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ToyTable = ({ toy }) => {
-  const { name, category, quantity, price, seller } = toy;
+  const { _id, name, category, quantity, price, seller } = toy;
   return (
     <>
       <tbody>
@@ -24,7 +24,7 @@ const ToyTable = ({ toy }) => {
           </td>
           <td>
             <Link
-              to="/"
+              to={`/toy/${_id}`}
               className="bg_secondary text-xs transition font-semibold py-1 px-2 hover:bg-white"
             >
               View Details
