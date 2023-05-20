@@ -17,18 +17,6 @@ const AddToy = () => {
     const quantity = form.quantity?.value;
     const description = form.description?.value;
 
-    console.log(
-      name,
-      email,
-      toyName,
-      photoURL,
-      category,
-      price,
-      rating,
-      quantity,
-      description
-    );
-
     const toyDetails = {
       image: photoURL,
       toyName: toyName,

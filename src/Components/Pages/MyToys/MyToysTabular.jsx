@@ -2,7 +2,7 @@ import React from "react";
 import { RiEditBoxLine } from "react-icons/ri";
 import { AiOutlineDelete } from "react-icons/ai";
 
-const MyToysTabular = ({ myToy, handleDelete }) => {
+const MyToysTabular = ({ myToy, handleDelete, findToyData }) => {
   const {
     _id,
     name,
@@ -27,7 +27,9 @@ const MyToysTabular = ({ myToy, handleDelete }) => {
       <td className="text-base font-semibold text-red-600">{quantity}</td>
       <td className="text-xs font-semibold">{description}</td>
       <td>
-        <RiEditBoxLine className="h-5 w-5 text-green-600"></RiEditBoxLine>
+        <label htmlFor="my-modal-3" onClick={() => findToyData(_id)}>
+          <RiEditBoxLine className="h-5 w-5 text-green-600"></RiEditBoxLine>
+        </label>
       </td>
       <td>
         <AiOutlineDelete
