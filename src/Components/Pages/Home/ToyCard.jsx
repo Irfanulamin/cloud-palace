@@ -1,19 +1,29 @@
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
-const ToyCard = ({ toy, toastifyWarning }) => {
+const ToyCard = ({ toy }) => {
+  const { _id, image, toyName, price, rating, quantity } = toy;
   const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleViewDetails = () => {
     if (!user?.email) {
-      toastifyWarning();
+      Swal.fire(
+        "Login first!",
+        "You have to log in first to view details!",
+        "error"
+      );
+      navigate("/login");
+    } else {
+      navigate(`/toy/${_id}`);
     }
   };
 
-  const { _id, image, toyName, price, rating, quantity } = toy;
   return (
     <div className="bg-base-100 p-7 rounded">
       <div>
@@ -40,20 +50,12 @@ const ToyCard = ({ toy, toastifyWarning }) => {
       <div className="my-1">
         <Rating style={{ maxWidth: 120 }} value={Math.round(rating)} readOnly />
       </div>
-      {user?.email ? (
-        <Link to={`/toy/${_id}`}>
-          <div className="font-semibold rounded hover:bg-white w-full transition text-center mt-2 text-black bg_tags py-2">
-            View Detail
-          </div>
-        </Link>
-      ) : (
-        <div
-          onClick={handleViewDetails}
-          className="font-semibold rounded hover:bg-white w-full transition text-center mt-2 text-black bg_tags py-2"
-        >
-          View Detail
-        </div>
-      )}
+      <div
+        onClick={handleViewDetails}
+        className="font-semibold rounded hover:bg-white w-full transition text-center mt-2 text-black bg_tags py-2"
+      >
+        View Detail
+      </div>
     </div>
   );
 };

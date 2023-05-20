@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import ToyCard from "./ToyCard";
 
-const TeddyBearTab = ({ toastifyWarning }) => {
+const TeddyBearTab = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
@@ -16,11 +16,7 @@ const TeddyBearTab = ({ toastifyWarning }) => {
   return (
     <div className="p-12 grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
       {toys.map((toy) => (
-        <ToyCard
-          toastifyWarning={toastifyWarning}
-          toy={toy}
-          key={toy._id}
-        ></ToyCard>
+        <ToyCard toy={toy} key={toy._id}></ToyCard>
       ))}
     </div>
   );

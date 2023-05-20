@@ -43,18 +43,30 @@ const Header = () => {
         <NavLink to="/alltoys " className="text-base font-semibold text-white">
           All Toys
         </NavLink>
+        {user?.email && (
+          <NavLink to="/mytoys" className="text-base font-semibold text-white">
+            My Toys
+          </NavLink>
+        )}
+        {user?.email && (
+          <NavLink to="/addtoy" className="text-base font-semibold text-white">
+            Add a Toy
+          </NavLink>
+        )}
         <NavLink to="/blogs" className="text-base font-semibold text-white">
           Blogs
-        </NavLink>
-        <NavLink to="/addtoy" className="text-base font-semibold text-white">
-          Add a Toy
-        </NavLink>
-        <NavLink to="/mytoys" className="text-base font-semibold text-white">
-          My Toys
         </NavLink>
         {!user && (
           <NavLink to="/login" className="text-base font-semibold text-white">
             Login
+          </NavLink>
+        )}
+        {!user && (
+          <NavLink
+            to="/register"
+            className="text-base font-semibold text-white"
+          >
+            Register
           </NavLink>
         )}
 
@@ -65,7 +77,7 @@ const Header = () => {
             className="avatar w-[2rem]"
           >
             <div className=" w-12 rounded-full">
-              <img src={user.photoURL} />
+              <img src={user?.photoURL} />
             </div>
           </div>
         )}
@@ -77,7 +89,7 @@ const Header = () => {
               onMouseLeave={handleHoverOut}
               className="text-base font-semibold text-white "
             >
-              {user.displayName}
+              {user?.displayName}
             </p>
           </div>
         )}
