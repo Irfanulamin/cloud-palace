@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { Rating } from "@smastrom/react-rating";
+import useTitle from "../../../CustomHooks/useTitle";
 
 const ToyPage = () => {
   const toyDetails = useLoaderData();
 
   const { image, toyName, name, email, price, rating, quantity, description } =
     toyDetails;
+
+  useTitle(`${toyName}`);
 
   return (
     <div className="bg_secondary py-24 px-44">

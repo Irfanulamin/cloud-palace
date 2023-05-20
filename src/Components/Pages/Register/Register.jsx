@@ -2,8 +2,10 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
+import useTitle from "../../../CustomHooks/useTitle";
 
 const Register = () => {
+  useTitle("Register");
   const [error, setError] = useState("");
   const { signUp, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();

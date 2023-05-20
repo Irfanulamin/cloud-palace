@@ -3,8 +3,10 @@ import "sweetalert2/dist/sweetalert2.min.css";
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 import MyToysTabular from "./MyToysTabular";
+import useTitle from "../../../CustomHooks/useTitle";
 
 const MyToys = () => {
+  useTitle("My Toys");
   const [myToys, setMyToys] = useState([]);
   const [specifiedToy, setSpecifiedToy] = useState({});
   const { user } = useContext(AuthContext);

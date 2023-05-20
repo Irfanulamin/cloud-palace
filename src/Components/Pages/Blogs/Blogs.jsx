@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "../../../CustomHooks/useTitle";
 
 const Blogs = () => {
+  useTitle("Blogs");
   return (
     <div className="flex justify-center w-full items-center bg_secondary py-24">
       <div className="w-3/4">

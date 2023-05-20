@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ToyTable from "./ToyTable";
+import useTitle from "../../../CustomHooks/useTitle";
 
 const AllToys = () => {
+  useTitle("All Toys");
   const [toys, setToys] = useState([]);
   const [search, setSearch] = useState("");
   const [filterToys, setFilterToys] = useState([]);
