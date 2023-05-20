@@ -17,9 +17,12 @@ const ErrorPage = () => {
         <img src={errorImage} alt="404-Image" className="w-96" />
       </div>
       <div>
-        <Link to="/" className="text-3xl font-semibold font-sans ">
-          Go Back to the
-          <span className="text-yellow-400 r"> Webpage</span>
+        <Link to="/">
+          <div className="flex justify-center items-center ">
+            <p className="btn border-none hover:text-black hover:bg-transparent bg-yellow-400 text-lg tracking-wider font-semibold ">
+              Go to the Home Page
+            </p>
+          </div>
         </Link>
       </div>
     </div>

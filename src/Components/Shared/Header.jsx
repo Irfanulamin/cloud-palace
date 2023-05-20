@@ -46,17 +46,12 @@ const Header = () => {
         <NavLink to="/blogs" className="text-base font-semibold text-white">
           Blogs
         </NavLink>
-        {user && (
-          <NavLink to="/mytoys" className="text-base font-semibold text-white">
-            My Toys
-          </NavLink>
-        )}
-        {user && (
-          <NavLink to="/alltoys" className="text-base font-semibold text-white">
-            Add a Toys
-          </NavLink>
-        )}
-
+        <NavLink to="/addtoy" className="text-base font-semibold text-white">
+          Add a Toy
+        </NavLink>
+        <NavLink to="/mytoys" className="text-base font-semibold text-white">
+          My Toys
+        </NavLink>
         {!user && (
           <NavLink to="/login" className="text-base font-semibold text-white">
             Login

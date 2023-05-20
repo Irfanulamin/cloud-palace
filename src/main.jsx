@@ -9,10 +9,10 @@ import Login from "./Components/Pages/Login/Login";
 import Register from "./Components/Pages/Register/Register";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import AllToys from "./Components/Pages/AllToys/AllToys";
-import ToyCard from "./Components/Pages/Home/ToyCard";
 import ToyPage from "./Components/Pages/ToyPage/ToyPage";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Blogs from "./Components/Pages/Blogs/Blogs";
+import AddToy from "./Components/Pages/AddToy/AddToy";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs></Blogs>,
+      },
+      {
+        path: "/addtoy",
+        element: (
+          <PrivateRoute>
+            <AddToy></AddToy>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/toy/:id",
