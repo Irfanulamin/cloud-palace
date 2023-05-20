@@ -13,7 +13,7 @@ const ToyCard = ({ toy, toastifyWarning }) => {
     }
   };
 
-  const { _id, image, name, price, rating, quantity } = toy;
+  const { _id, image, toyName, price, rating, quantity } = toy;
   return (
     <div className="bg-base-100 p-7 rounded">
       <div>
@@ -25,7 +25,7 @@ const ToyCard = ({ toy, toastifyWarning }) => {
       </div>
       <div>
         <p className="text-center mt-2 mb-4 text-xl font-semibold primary_font">
-          {name}
+          {toyName}
         </p>
       </div>
       <div>

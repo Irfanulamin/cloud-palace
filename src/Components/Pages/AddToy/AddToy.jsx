@@ -31,10 +31,11 @@ const AddToy = () => {
 
     const toyDetails = {
       image: photoURL,
-      name: toyName,
+      toyName: toyName,
       price: price,
       rating: rating,
-      seller: { name: name, email: email },
+      name: name,
+      email: email,
       category: category,
       quantity: quantity,
       description: description,

@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ToyTable = ({ toy }) => {
-  const { _id, name, category, quantity, price, seller } = toy;
+  const { _id, toyName, name, category, quantity, price, seller } = toy;
   return (
     <>
       <tbody>
         <tr>
           <th>
-            <p className="text-base font-bold pl-2">{seller?.name}</p>
+            <p className="text-base font-bold pl-2">{name}</p>
           </th>
           <td>
-            <p className="text-base primary_font my-2">{name}</p>
+            <p className="text-base primary_font my-2">{toyName}</p>
           </td>
           <td>
             <p className="font-bold text-sm">{category}</p>

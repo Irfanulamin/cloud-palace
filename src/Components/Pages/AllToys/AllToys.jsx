@@ -9,14 +9,14 @@ const AllToys = () => {
     fetch("http://localhost:7000/toys")
       .then((res) => res.json())
       .then((data) => setToys(data));
-  }, []);
+  }, [toys]);
 
   const handleSearch = (event) => {
     const searchedText = event.target.value;
     setSearch(searchedText);
 
     const filteredToys = toys.filter((toy) =>
-      toy.name.toLowerCase().includes(searchedText.toLowerCase())
+      toy.toyName.toLowerCase().includes(searchedText.toLowerCase())
     );
     setFilterToys(filteredToys);
   };

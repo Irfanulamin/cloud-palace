@@ -1,39 +1,36 @@
 [
   {
     "image": "https://i.ibb.co/xjqPcYD/7.jpg",
-    "name": "Green Dino Plushie",
+    "toyName": "Green Dino Plushie",
     "price": 17.99,
     "rating": 4.4,
-    "seller": {
-      "name": "Flyin' Dinos",
-      "email": "flyindinos@example.com"
-    },
+
+    "name": "Flyin' Dinos",
+    "email": "flyindinos@example.com",
     "category": "Dinosaur",
     "quantity": 9,
     "description": "Introducing the Pterodactyl Plushie, a cuddly friend that will take your child's imagination ."
   },
   {
     "image": "https://i.ibb.co/0nqbzwg/4.jpg",
-    "name": "Blue Dino Set",
+    "toyName": "Blue Dino Set",
     "price": 15.99,
     "rating": 4.2,
-    "seller": {
-      "name": "DinoDiscovery",
-      "email": "dinodiscovery@example.com"
-    },
+
+    "name": "DinoDiscovery",
+    "email": "dinodiscovery@example.com",
     "category": "Dinosaur",
     "quantity": 7,
     "description": "Meet the Diplodocus Stuffed Toy, a gentle herbivore that will bring Jurassic adventures to life. With its long neck, friendly face, and soft plush body, this diplodocus toy is perfect for cuddling and imaginative play."
   },
   {
     "image": "https://i.ibb.co/njDzbxg/3.jpg",
-    "name": "Dino Plush Toy",
+    "toyName": "Dino Plush Toy",
     "price": 18.99,
     "rating": 4.7,
-    "seller": {
-      "name": "DinoGuardians",
-      "email": "dinoguardians@example.com"
-    },
+
+    "name": "DinoGuardians",
+    "email": "dinoguardians@example.com",
     "category": "Dinosaur",
     "quantity": 5,
     "description": "Introducing the Ankylosaurus Plush Toy, a mighty dinosaur that brings a touch of armored fun to playtime. With its textured spikes, sturdy tail, and soft body, this ankylosaurus plush toy is perfect for both cuddles and dino battles."
@@ -41,103 +38,95 @@
 
   {
     "image": "https://i.ibb.co/51Yqn2f/8.jpg",
-    "name": "Dinosaur Plushie",
+    "toyName": "Dinosaur Plushie",
     "price": 20.99,
     "rating": 4.9,
-    "seller": {
-      "name": "SpinoWorld",
-      "email": "spinoworld@example.com"
-    },
+
+    "name": "SpinoWorld",
+    "email": "spinoworld@example.com",
     "category": "Dinosaur",
     "quantity": 6,
     "description": "Step into the world of the dinosaur with this cuddly Spinosaurus Plushie. With its realistic detailing, soft plush materials, and menacing yet huggable appearance, this plushie is perfect for dinosaur enthusiasts and imaginative play."
   },
   {
     "image": "https://i.ibb.co/qsrmqXH/2.jpg",
-    "name": "Green T-Rex",
+    "toyName": "Green T-Rex",
     "price": 19.99,
     "rating": 4.5,
-    "seller": {
-      "name": "DinoLandia",
-      "email": "dinolandia@example.com"
-    },
+
+    "name": "DinoLandia",
+    "email": "dinolandia@example.com",
     "category": "Dinosaur",
     "quantity": 10,
     "description": "Introducing the T-Rex Plush Toy, a ferociously cute companion that brings the world of dinosaurs to life. With its soft green scales, sharp teeth, and realistic detailing, this T-Rex plush toy is perfect for playtime adventures and imaginative storytelling."
   },
   {
     "image": "https://i.ibb.co/x599Ts2/17.jpg",
-    "name": "Giraffe Plush",
+    "toyName": "Giraffe Plush",
     "price": 16.99,
     "rating": 4.6,
-    "seller": {
-      "name": "Safari Friends",
-      "email": "safarifriends@example.com"
-    },
+
+    "name": "Safari Friends",
+    "email": "safarifriends@example.com",
     "category": "Animal",
     "quantity": 8,
     "description": "Meet the Graceful Giraffe Plush, a tall and lovable companion that brings the beauty of the savanna to playtime. With its long neck, soft spotted fur, and friendly expression, this giraffe plush toy is perfect for cuddling and imaginative adventures."
   },
   {
     "image": "https://i.ibb.co/5Wytdnm/13.jpg",
-    "name": "Elephant Plush",
+    "toyName": "Elephant Plush",
     "price": 14.99,
     "rating": 4.5,
-    "seller": {
-      "name": "Wildlife Wonders",
-      "email": "wildlifewonders@example.com"
-    },
+
+    "name": "Wildlife Wonders",
+    "email": "wildlifewonders@example.com",
     "category": "Animal",
     "quantity": 10,
     "description": "Meet the Adorable Elephant Plush, a lovable companion that brings the majesty of the wild to playtime. With its soft gray fur, floppy ears, and gentle expression, this elephant plush toy is perfect for cuddling and imaginative adventures."
   },
   {
     "image": "https://i.ibb.co/ynkmHpz/16.jpg",
-    "name": "Lion Soft Toy",
+    "toyName": "Lion Soft Toy",
     "rating": 4.3,
-    "seller": {
-      "name": "Jungle Kingdom",
-      "email": "junglekingdom@example.com"
-    },
+
+    "name": "Jungle Kingdom",
+    "email": "junglekingdom@example.com",
     "category": "Animal",
     "quantity": 8,
     "description": "Introducing the Roaring Lion Stuffed Animal, a majestic king of the savanna that will ignite your child's imagination. With its golden mane, fierce expression, and soft plush body, this lion stuffed animal is perfect for cuddles and imaginative play."
   },
   {
     "image": "https://i.ibb.co/CBb73sN/15.jpg",
-    "name": "Penguin Plushie",
+    "toyName": "Penguin Plushie",
     "price": 12.99,
     "rating": 4.7,
-    "seller": {
-      "name": "Arctic Friends",
-      "email": "arcticfriends@example.com"
-    },
+
+    "name": "Arctic Friends",
+    "email": "arcticfriends@example.com",
     "category": "Animal",
     "quantity": 12,
     "description": "Introducing the Playful Penguin Plushie, a delightful friend that will waddle into your child's heart. With its black and white feathers, adorable expression, and soft plush body, this penguin plushie is perfect for playtime and cuddles."
   },
   {
     "image": "https://i.ibb.co/n6J11pK/12.jpg",
-    "name": "Giraffe Stuffed Animal",
+    "toyName": "Giraffe Stuffed Animal",
     "price": 19.99,
     "rating": 4.8,
-    "seller": {
-      "name": "Rainbow Zoo",
-      "email": "rainbowzoo@example.com"
-    },
+
+    "name": "Rainbow Zoo",
+    "email": "rainbowzoo@example.com",
     "category": "Animal",
     "quantity": 6,
     "description": "Introducing the Vibrant Giraffe Stuffed Animal, a colorful and whimsical friend that will capture your child's imagination. With its vibrant fur, soft texture, and playful design, this giraffe stuffed animal is perfect for cuddles and imaginative play."
   },
   {
     "image": "https://i.ibb.co/xjqPcYD/7.jpg",
-    "name": "Green Cuddly Dino",
+    "toyName": "Green Cuddly Dino",
     "price": 16.99,
     "rating": 4.3,
-    "seller": {
-      "name": "DinoTales",
-      "email": "dinotales@example.com"
-    },
+
+    "name": "DinoTales",
+    "email": "dinotales@example.com",
     "category": "Dinosaur",
     "quantity": 8,
     "description": "Meet the Stegosaurus Stuffed Animal, a gentle giant from prehistoric times. With its soft, spiky plates and friendly expression, this plush toy is perfect for dinosaur enthusiasts of all ages, inspiring hours of imaginative play."
@@ -145,156 +134,143 @@
 
   {
     "image": "https://i.ibb.co/4VG3HVD/5.jpg",
-    "name": "Blue Plushie",
+    "toyName": "Blue Plushie",
     "price": 14.99,
     "rating": 4.7,
-    "seller": {
-      "name": "DinoLuv",
-      "email": "dinoluv@example.com"
-    },
+    "name": "DinoLuv",
+    "email": "dinoluv@example.com",
     "category": "Dinosaur",
     "quantity": 12,
     "description": "Introducing the Triceratops Plushie, a lovable herbivore that will capture your child's imagination. With its soft horns, frill, and cuddly design, this triceratops plushie is perfect for playtime and snuggles."
   },
   {
     "image": "https://i.ibb.co/HPDNMbK/6.jpg",
-    "name": "Raptor Plush Toy",
+    "toyName": "Raptor Plush Toy",
     "price": 21.99,
     "rating": 4.8,
-    "seller": {
-      "name": "RaptorFun",
-      "email": "raptorfun@example.com"
-    },
+
+    "name": "RaptorFun",
+    "email": "raptorfun@example.com",
     "category": "Dinosaur",
     "quantity": 6,
     "description": "Step into the world of dinosaurs with the Velociraptor Plush Toy. With its vibrant colors, lifelike features, and soft plush body, this velociraptor toy is perfect for playtime adventures and educational fun."
   },
   {
     "image": "https://i.ibb.co/L6zpXbB/soft-1.jpg",
-    "name": "Brown Teddy Bear",
+    "toyName": "Brown Teddy Bear",
     "price": 14.99,
     "rating": 4.2,
-    "seller": {
-      "name": "Cuddly Toys",
-      "email": "cuddlytoys@example.com"
-    },
+
+    "name": "Cuddly Toys",
+    "email": "cuddlytoys@example.com",
     "category": "Teddy",
     "quantity": 5,
     "description": "Meet your new cuddly companion, the stuffed teddy bear! This adorable bear is made from soft and huggable material, making it the perfect bedtime buddy for kids of all ages."
   },
   {
     "image": "https://i.ibb.co/C10Hb5h/9.jpg",
-    "name": "Cuddly Teddy Bear",
+    "toyName": "Cuddly Teddy Bear",
     "price": 14.99,
     "rating": 4.2,
-    "seller": {
-      "name": "Cuddly Toys",
-      "email": "cuddlytoys@example.com"
-    },
+
+    "name": "Cuddly Toys",
+    "email": "cuddlytoys@example.com",
     "category": "Teddy",
     "quantity": 5,
     "description": "Meet your new cuddly companion, the stuffed teddy bear! This adorable bear is made from soft and huggable material, making it the perfect bedtime buddy for kids of all ages."
   },
   {
     "image": "https://i.ibb.co/ZJ2GQxg/11.jpg",
-    "name": "Polar Bears Set",
+    "toyName": "Polar Bears Set",
     "price": 29.99,
     "rating": 4.8,
-    "seller": {
-      "name": "Teddy Haven",
-      "email": "teddyhaven@example.com"
-    },
+
+    "name": "Teddy Haven",
+    "email": "teddyhaven@example.com",
     "category": "Teddy",
     "quantity": 10,
     "description": "Introducing the Polar Bear Teddy, a cuddly companion that brings the magic of the Arctic to your child's arms. Made with soft, white fur and adorable details, this polar bear teddy is perfect for snuggling and imaginative play."
   },
   {
     "image": "https://i.ibb.co/c3GpgH3/10.jpg",
-    "name": "Love Teddy Bear",
+    "toyName": "Love Teddy Bear",
     "price": 16.99,
     "rating": 4.5,
-    "seller": {
-      "name": "Love Treasures",
-      "email": "rainbowtreasures@example.com"
-    },
+
+    "name": "Love Treasures",
+    "email": "rainbowtreasures@example.com",
     "category": "Teddy",
     "quantity": 7,
     "description": "Meet the Love Teddy Bear, a vibrant and huggable friend that brings joy and color into your child's life. With its multicolored fur and gentle smile, this teddy bear is perfect for cuddles and imaginative adventures."
   },
   {
     "image": "https://i.ibb.co/tJWzqFC/14.jpg",
-    "name": "Red Teddy Bear",
+    "toyName": "Red Teddy Bear",
     "price": 16.99,
     "rating": 4.5,
-    "seller": {
-      "name": "Love Treasures",
-      "email": "rainbowtreasures@example.com"
-    },
+
+    "name": "Love Treasures",
+    "email": "rainbowtreasures@example.com",
     "category": "Teddy",
     "quantity": 7,
     "description": "A vibrant and huggable friend that brings joy and color into your child's life. With its multicolored fur and gentle smile, this teddy bear is perfect for cuddles and imaginative adventures."
   },
   {
     "image": "https://i.ibb.co/r0nW2f4/soft-3.jpg",
-    "name": "Elephant Toy Set",
+    "toyName": "Elephant Toy Set",
     "price": 24.99,
     "rating": 4,
-    "seller": {
-      "name": "Rimon Diaz",
-      "email": "eimonrimon@example.com"
-    },
+
+    "name": "Rimon Diaz",
+    "email": "eimonrimon@example.com",
     "category": "Animal",
     "quantity": 3,
     "description": "Meet your new cuddly companion, the stuffed elephant! This adorable toy is made from soft and huggable material, making it the perfect bedtime buddy for kids."
   },
   {
     "image": "https://i.ibb.co/qMcc7HN/18.jpg",
-    "name": "Giant Teddy Bear",
+    "toyName": "Giant Teddy Bear",
     "price": 49.99,
     "rating": 4.9,
-    "seller": {
-      "name": "Big Cuddles",
-      "email": "bigcuddles@example.com"
-    },
+
+    "name": "Big Cuddles",
+    "email": "bigcuddles@example.com",
     "category": "Teddy",
     "quantity": 2,
     "description": "Introducing the Giant Teddy Bear, a supersized cuddly companion that will bring comfort and joy to your child's life. This massive teddy bear stands tall, offering warm hugs and a lifetime of memories."
   },
   {
     "image": "https://i.ibb.co/Rjq7dbN/soft-2.jpg",
-    "name": "Valentine Teddy Set",
+    "toyName": "Valentine Teddy Set",
     "price": 49.99,
     "rating": 5,
-    "seller": {
-      "name": "Josh wash",
-      "email": "josh@example.com"
-    },
+
+    "name": "Josh wash",
+    "email": "josh@example.com",
     "category": "Teddy",
     "quantity": 2,
     "description": "Gift Your Love one with this Teddy bear set on Valentines Day"
   },
   {
     "image": "https://i.ibb.co/ygVVCyy/soft-7.jpg",
-    "name": "Unicorn Soft Toy",
+    "toyName": "Unicorn Soft Toy",
     "price": 99.99,
     "rating": 5,
-    "seller": {
-      "name": "Rimon Diaz",
-      "email": "eimonrimon@example.com"
-    },
+
+    "name": "Rimon Diaz",
+    "email": "eimonrimon@example.com",
     "category": "Animal",
     "quantity": 6,
     "description": "Meet your new cuddly companion, the stuffed unicorn! This adorable toy is made from soft and huggable material, making it the perfect bedtime buddy for kids."
   },
   {
     "image": "https://i.ibb.co/jyDCWsQ/soft-8.jpg",
-    "name": "Lion Soft Toy",
+    "toyName": "Lion Soft Toy",
     "price": 49.99,
     "rating": 5,
-    "seller": {
-      "name": "karl jacoobs",
-      "email": "karl@gmail.com"
-    },
+
+    "name": "karl jacoobs",
+    "email": "karl@gmail.com",
     "category": "Teddy",
     "quantity": 2,
     "description": "Gift Your Love one with this Teddy bear set on Valentines Day"

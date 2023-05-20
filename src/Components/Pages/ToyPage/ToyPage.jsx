@@ -5,7 +5,7 @@ import { Rating } from "@smastrom/react-rating";
 const ToyPage = () => {
   const toyDetails = useLoaderData();
 
-  const { image, seller, name, price, rating, quantity, description } =
+  const { image, toyName, name, email, price, rating, quantity, description } =
     toyDetails;
 
   return (
@@ -14,24 +14,20 @@ const ToyPage = () => {
         <div>
           <img
             src={image}
-            alt={name}
+            alt={toyName}
             className="h-72 w-72 object-cover shadow-lg border border-black"
           />
         </div>
         <div className="w-1/2">
           <p className="primary_font text-4xl lg:text-5xl text-black mb-3 bg-white">
-            {name}
+            {toyName}
           </p>
           <div className="border bg-white border-black mt-4">
             <p className="bg-black text-white  text-base font-bold  mn-1 px-2">
               Seller Information :
             </p>
-            <p className=" text-lg  text-black font-bold  px-2 ">
-              {seller.name}
-            </p>
-            <p className=" text-lg   text-black font-bold  px-2">
-              {seller.email}
-            </p>
+            <p className=" text-lg  text-black font-bold  px-2 ">{name}</p>
+            <p className=" text-lg   text-black font-bold  px-2">{email}</p>
           </div>
           <p className=" text-xl  text-black font-bold bg-white px-2 py-1 my-2">
             Price: <span className="text-green-600 ">{price}</span>
