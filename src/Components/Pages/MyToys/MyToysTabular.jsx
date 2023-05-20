@@ -27,7 +27,7 @@ const MyToysTabular = ({ myToy, handleDelete, findToyData }) => {
       <td className="text-base font-semibold text-red-600">{quantity}</td>
       <td className="text-xs font-semibold">{description}</td>
       <td>
-        <label htmlFor="my-modal-3" onClick={() => findToyData(_id)}>
+        <label htmlFor="my-modal-4" onClick={() => findToyData(_id)}>
           <RiEditBoxLine className="h-5 w-5 text-green-600"></RiEditBoxLine>
         </label>
       </td>

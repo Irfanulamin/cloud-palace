@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 import MyToysTabular from "./MyToysTabular";
@@ -17,14 +19,24 @@ const MyToys = () => {
   }, [myToys]);
 
   const handleDelete = (id) => {
-    const proceed = confirm("Are you sure you want delete?");
-    if (proceed) {
-      fetch(`http://localhost:7000/toys/${id}`, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-    }
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:7000/toys/${id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => console.log(data));
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+      }
+    });
   };
 
   const findToyData = (id) => {
@@ -47,22 +59,31 @@ const MyToys = () => {
       body: JSON.stringify(updatedToyDetails),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        if (data?.modifiedCount > 0) {
+          Swal.fire(
+            "Successfully Updated!",
+            "Your data has been updated!",
+            "success"
+          );
+        }
+      });
   };
 
   return (
     <div className="bg_tags px-24 py-44">
-      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box relative bg_secondary ">
-          <label
-            htmlFor="my-modal-3"
-            className="btn btn-sm border-none font-bold btn-circle hover:bg-white hover:text-black bg-stone-700  absolute right-10 top-10"
-          >
-            ✕
-          </label>
+      {myToys.length === 0 && (
+        <p className="text-center font-semibold text-xl">
+          You didn't add any toys
+        </p>
+      )}
+
+      <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+      <label htmlFor="my-modal-4" className="modal cursor-pointer ">
+        <label className="modal-box relative bg_secondary" htmlFor="">
           <form onSubmit={handleUpdate}>
-            <div className="p-5 flex w-3/4  items-center justify-center">
+            <div className="p-5 flex w-3/4   items-center justify-center">
               <div className="w-full">
                 <div className="form-control">
                   <label className="label">
@@ -110,8 +131,8 @@ const MyToys = () => {
                   />
                 </div>
                 <p className="text-base font-semibold">
-                  Please click on update button then click on cross buttton to
-                  close the modal.
+                  Please click on click on cross buttton to close the modal
+                  after updating.
                 </p>
               </div>
             </div>
@@ -123,39 +144,41 @@ const MyToys = () => {
               />
             </div>
           </form>
+        </label>
+      </label>
+      {myToys.length !== 0 && (
+        <div>
+          <div className="overflow-x-auto ">
+            <table className="table table-compact w-full border border-black ">
+              <thead>
+                <tr>
+                  <th>Seller</th>
+                  <th>Email</th>
+                  <th>Toy Name</th>
+                  <th>PhotoURl</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Rating</th>
+                  <th>Quantity</th>
+                  <th>Description</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {myToys.map((myToy, index) => (
+                  <MyToysTabular
+                    key={index}
+                    findToyData={findToyData}
+                    handleDelete={handleDelete}
+                    myToy={myToy}
+                  ></MyToysTabular>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <div>
-        <div className="overflow-x-auto ">
-          <table className="table table-compact w-full border border-black ">
-            <thead>
-              <tr>
-                <th>Seller</th>
-                <th>Email</th>
-                <th>Toy Name</th>
-                <th>PhotoURl</th>
-                <th>Category</th>
-                <th>Price</th>
-                <th>Rating</th>
-                <th>Quantity</th>
-                <th>Description</th>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              {myToys.map((myToy, index) => (
-                <MyToysTabular
-                  key={index}
-                  findToyData={findToyData}
-                  handleDelete={handleDelete}
-                  myToy={myToy}
-                ></MyToysTabular>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
