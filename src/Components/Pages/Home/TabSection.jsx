@@ -17,7 +17,6 @@ const TabSection = () => {
           <Tab>Dinosaurs</Tab>
           <Tab>Animals</Tab>
         </TabList>
-
         <TabPanel>
           <TeddyBearTab></TeddyBearTab>
         </TabPanel>

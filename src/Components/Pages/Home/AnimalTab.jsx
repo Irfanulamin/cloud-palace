@@ -15,6 +15,11 @@ const AnimalTab = () => {
 
   return (
     <>
+      {toys.length === 0 && (
+        <div className="flex items-center justify-center py-28">
+          <progress className="progress w-56"></progress>
+        </div>
+      )}
       <div className="p-12 grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
         {toys.map((toy) => (
           <ToyCard toy={toy} key={toy._id}></ToyCard>
