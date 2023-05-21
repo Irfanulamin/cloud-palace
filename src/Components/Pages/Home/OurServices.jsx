@@ -6,7 +6,7 @@ import { TbMoodKid } from "react-icons/tb";
 
 const OurServices = () => {
   return (
-    <div className="bg-base-200 py-44 px-20">
+    <div className="bg-white py-44 px-20">
       <h2 className="text-center mb-16 text-black bg_tags rounded underline text-4xl  md:text-4xl  lg:text-6xl font-bold primary_font ">
         Our Services
       </h2>

@@ -57,7 +57,7 @@ const AddToy = () => {
       <div>
         <div className="bg_tags">
           <form onSubmit={handleAddAToy}>
-            <div className="p-10 gap-12 flex">
+            <div className="p-10 md:gap-12 lg:gap-12 flex lg:flex-row md:flex-row flex-col gap-2">
               <div className="w-1/2">
                 <div className="form-control">
                   <label className="label">
@@ -172,11 +172,11 @@ const AddToy = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex ml-10 md:ml-0 lg:ml-0 justify-start md:justify-center lg:justify-center items-center">
               <input
                 type="submit"
                 value="Add The Toy"
-                className="w-1/2 text-center primary_font text-xl bg_secondary py-5 rounded mb-12"
+                className="w-1/2 text-center primary_font lg:text-xl text-sm md:text-xl bg_secondary py-5 rounded mb-12"
               />
             </div>
           </form>

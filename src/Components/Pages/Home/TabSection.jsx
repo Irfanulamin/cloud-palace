@@ -8,7 +8,7 @@ import AnimalTab from "./AnimalTab";
 const TabSection = () => {
   return (
     <div className="bg_primary pt-32">
-      <h2 className="text-center  text-7xl bg_tags text-white primary_font  mb-24">
+      <h2 className="text-center  text-3xl md:text-6xl lg:text-7xl bg_tags text-white primary_font  mb-24">
         Tab Section
       </h2>
       <Tabs>

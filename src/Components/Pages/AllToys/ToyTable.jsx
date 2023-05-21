@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ToyTable = ({ toy }) => {
-  const { _id, toyName, name, category, quantity, price, seller } = toy;
+const ToyTable = ({ toy, index }) => {
+  const { _id, toyName, name, category, quantity, price } = toy;
   return (
     <>
       <tbody>
         <tr>
           <th>
-            <p className="text-base font-bold pl-2">{name}</p>
+            <p className="ml-2 text-xl font-semibold">{index + 1}</p>
           </th>
+          <td>
+            <p className="text-base font-bold pl-2">{name}</p>
+          </td>
           <td>
             <p className="text-base primary_font my-2">{toyName}</p>
           </td>

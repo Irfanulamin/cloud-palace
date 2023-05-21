@@ -12,7 +12,7 @@ const ToyPage = () => {
   useTitle(`${toyName}`);
 
   return (
-    <div className="bg_secondary py-24 px-44">
+    <div className="bg_secondary p-10  md:py-12 lg:py-24 md:px-16 lg:px-44">
       <div className=" flex flex-col md:flex-row lg:flex-row justify-start gap-16 items-center ">
         <div>
           <img
@@ -21,7 +21,7 @@ const ToyPage = () => {
             className="h-72 w-72 object-cover shadow-lg border border-black"
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <p className="primary_font text-4xl lg:text-5xl text-black mb-3 bg-white">
             {toyName}
           </p>
@@ -48,7 +48,7 @@ const ToyPage = () => {
         </div>
       </div>
       <div className="border  border-black text-black font-semibold bg-white py-1 pl-2 my-2">
-        <div className="p-16">
+        <div className="p-6 md:p-12 lg:p-16">
           <p className="text-3xl tracking-wide font-extrabold mb-2">
             Description
           </p>
