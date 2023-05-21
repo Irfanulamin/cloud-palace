@@ -22,9 +22,9 @@ const MyToysTabular = ({ myToy, handleDelete, findToyData }) => {
       <td className="primary_font text-lg">{toyName}</td>
       <td className="text-base font-semibold">{image}</td>
       <td className="text-base font-semibold">{category}</td>
-      <td className="text-base font-semibold text-green-600">{price}</td>
+      <td className="text-base font-semibold text-red-600">{price}</td>
       <td className="text-base font-semibold text-yellow-600">{rating}</td>
-      <td className="text-base font-semibold text-red-600">{quantity}</td>
+      <td className="text-base font-semibold text-green-600">{quantity}</td>
       <td className="text-xs font-semibold">{description}</td>
       <td>
         <label htmlFor="my-modal-4" onClick={() => findToyData(_id)}>

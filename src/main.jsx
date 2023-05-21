@@ -63,7 +63,8 @@ const router = createBrowserRouter([
             <ToyPage></ToyPage>
           </PrivateRoute>
         ),
-        loader: ({ params }) => fetch(`http://localhost:7000/toy/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://cloud-palace-server.vercel.app/toy/${params.id}`),
       },
     ],
   },

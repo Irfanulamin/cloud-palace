@@ -5,7 +5,7 @@ const AnimalTab = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/toys")
+    fetch("https://cloud-palace-server.vercel.app/toys")
       .then((res) => res.json())
       .then((data) => {
         const categoryToys = data.filter((toy) => toy.category === "Animal");

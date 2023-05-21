@@ -9,7 +9,7 @@ const AllToys = () => {
   const [search, setSearch] = useState("");
   const [filterToys, setFilterToys] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:7000/toys")
+    fetch("https://cloud-palace-server.vercel.app/toys")
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, [toys]);

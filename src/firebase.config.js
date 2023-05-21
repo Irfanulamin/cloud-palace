@@ -6,11 +6,11 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_apikey,
-  authDomain: "cloud-palace-auth.firebaseapp.com",
-  projectId: "cloud-palace-auth",
-  storageBucket: "cloud-palace-auth.appspot.com",
-  messagingSenderId: "108474482057",
-  appId: "1:108474482057:web:4a32b44edb112f4b413558",
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase

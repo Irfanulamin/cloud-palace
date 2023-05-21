@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import ToyCard from "./ToyCard";
 
 const TeddyBearTab = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/toys")
+    fetch("https://cloud-palace-server.vercel.app/toys")
       .then((res) => res.json())
       .then((data) => {
         const categoryToys = data.filter((toy) => toy.category === "Teddy");

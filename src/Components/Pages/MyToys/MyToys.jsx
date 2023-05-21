@@ -14,7 +14,7 @@ const MyToys = () => {
   const { price, quantity, description } = specifiedToy;
   const [control, setControl] = useState(false);
 
-  const url = `http://localhost:7000/addedToys?email=${user?.email}&sort=${sort}`;
+  const url = `https://cloud-palace-server.vercel.app/addedToys?email=${user?.email}&sort=${sort}`;
 
   useEffect(() => {
     fetch(url)
@@ -33,7 +33,7 @@ const MyToys = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:7000/toys/${id}`, {
+        fetch(`https://cloud-palace-server.vercel.app/toys/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -61,7 +61,7 @@ const MyToys = () => {
     const description = form.description?.value;
     const updatedToyDetails = { price, quantity, description };
 
-    fetch(`http://localhost:7000/toys/${specifiedToy?._id}`, {
+    fetch(`https://cloud-palace-server.vercel.app/toys/${specifiedToy?._id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(updatedToyDetails),
@@ -78,6 +78,15 @@ const MyToys = () => {
           setControl(!control);
         }
       });
+  };
+
+  const handleAscending = () => {
+    setControl(!control);
+    setSort(1);
+  };
+  const handleDescending = () => {
+    setControl(!control);
+    setSort(-1);
   };
 
   return (
@@ -157,22 +166,21 @@ const MyToys = () => {
       </label>
       {myToys.length !== 0 && (
         <div>
-          <label className="swap">
-            <input type="checkbox" />
-            <div
-              onClick={() => setSort(1)}
-              className="swap-on bg-white px-5 py-1 rounded text-base font-bold"
+          <div className="flex justify-start gap-2 mb-2">
+            <button
+              onClick={handleAscending}
+              className=" bg-white px-5 py-1 rounded text-base font-bold"
             >
-              Ascending{"   "}
-              <span>{"<"}</span>
-            </div>
-            <div
-              onClick={() => setSort(-1)}
-              className="swap-off bg-white px-5 py-1 rounded text-base font-bold"
+              Ascending
+            </button>
+            <button
+              onClick={handleDescending}
+              className=" bg-white px-5 py-1 rounded text-base font-bold"
             >
-              Descending <span>{">"}</span>
-            </div>
-          </label>
+              Descending
+            </button>
+          </div>
+
           <div className="overflow-x-auto ">
             <table className="table table-compact w-full ">
               <thead>

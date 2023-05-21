@@ -33,7 +33,7 @@ const AddToy = () => {
       description: description,
     };
 
-    fetch("http://localhost:7000/addedToys", {
+    fetch("https://cloud-palace-server.vercel.app/addedToys", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(toyDetails),
