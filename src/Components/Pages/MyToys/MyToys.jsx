@@ -8,17 +8,19 @@ import useTitle from "../../../CustomHooks/useTitle";
 const MyToys = () => {
   useTitle("My Toys");
   const [myToys, setMyToys] = useState([]);
+  const [sort, setSort] = useState(1);
   const [specifiedToy, setSpecifiedToy] = useState({});
   const { user } = useContext(AuthContext);
   const { price, quantity, description } = specifiedToy;
+  const [control, setControl] = useState(false);
 
-  const url = `http://localhost:7000/addedToys?email=${user?.email}&sort=1`;
+  const url = `http://localhost:7000/addedToys?email=${user?.email}&sort=${sort}`;
 
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setMyToys(data));
-  }, [myToys]);
+  }, [url, control]);
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -35,8 +37,13 @@ const MyToys = () => {
           method: "DELETE",
         })
           .then((res) => res.json())
-          .then((data) => console.log(data));
-        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          .then((data) => {
+            if (data?.deletedCount > 0) {
+              Swal.fire("Deleted!", "Your file has been deleted.", "success");
+              const remaining = myToys.filter((mytoy) => mytoy._id !== id);
+              setMyToys(remaining);
+            }
+          });
       }
     });
   };
@@ -52,7 +59,6 @@ const MyToys = () => {
     const price = form.price?.value;
     const quantity = form.quantity?.value;
     const description = form.description?.value;
-
     const updatedToyDetails = { price, quantity, description };
 
     fetch(`http://localhost:7000/toys/${specifiedToy?._id}`, {
@@ -69,13 +75,14 @@ const MyToys = () => {
             "Your data has been updated!",
             "success"
           );
+          setControl(!control);
         }
       });
   };
 
   return (
     <div className="bg_tags px-24 py-44">
-      {myToys.length === 0 && (
+      {myToys?.length === 0 && (
         <p className="text-center font-semibold text-xl">
           You didn't add any toys
         </p>
@@ -150,8 +157,24 @@ const MyToys = () => {
       </label>
       {myToys.length !== 0 && (
         <div>
+          <label className="swap">
+            <input type="checkbox" />
+            <div
+              onClick={() => setSort(1)}
+              className="swap-on bg-white px-5 py-1 rounded text-base font-bold"
+            >
+              Ascending{"   "}
+              <span>{"<"}</span>
+            </div>
+            <div
+              onClick={() => setSort(-1)}
+              className="swap-off bg-white px-5 py-1 rounded text-base font-bold"
+            >
+              Descending <span>{">"}</span>
+            </div>
+          </label>
           <div className="overflow-x-auto ">
-            <table className="table table-compact w-full border border-black ">
+            <table className="table table-compact w-full ">
               <thead>
                 <tr>
                   <th>Seller</th>
